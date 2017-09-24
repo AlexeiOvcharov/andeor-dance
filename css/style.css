@@ -1,0 +1,170 @@
+
+/* Color palette */
+
+:root {
+	--wine-red: #810425;
+	--white: #dddddd;
+	--faded-red: #c83335;
+}
+
+body{
+	background-color: #000;
+}
+
+/* Text styles */
+
+@font-famely{
+	font-family: DecorCyrillic;
+	src:url(../fonts/DecorCyrillic.ttf);
+}
+@font-famely{
+	font-family: Romul;
+	src:url(../fonts/Romul.ttf);
+}
+@font-famely{
+	font-family: GillSans;
+	src:url(../fonts/GillSans.ttf);
+}
+
+
+.under-text {
+	font-family: DecorCyrillic;
+	font-size: 144.1px;
+	text-align: left;
+	color: rgba(255, 255, 255, 0.05);
+}
+
+.banner-text-1 {
+	font-family: DecorCyrillic;
+	font-size: 52.8px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.banner-text-3 {
+	font-family: DecorCyrillic;
+	font-size: 52.8px;
+	text-align: left;
+	color: #eeddb9;
+}
+
+.banner-text-2 {
+	font-family: Romul;
+	font-size: 35.2px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.p-contacts {
+	font-family: DecorCyrillic;
+	font-size: 25px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.h-4-footer {
+	font-family: Romul;
+	font-size: 22px;
+	text-align: left;
+	color: #eeddb9;
+}
+
+.button-send {
+	font-family: Romul;
+	font-size: 22px;
+	text-align: left;
+	color: #313131;
+}
+
+p {
+	font-family: GillSans;
+	font-size: 20.4px;
+	font-weight: 300;
+	text-align: left;
+	color: #ffffff;
+}
+
+button {
+	font-family: Romul;
+	font-size: 14.8px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.yellow-text {
+	font-family: GillSans;
+	font-size: 14.1px;
+	font-weight: 600;
+	text-align: left;
+	color: #d8c18f;
+}
+
+.menu {
+	font-family: Romul;
+	font-size: 12px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.menu-hover-menu-active {
+	font-family: Romul;
+	font-size: 12px;
+	text-align: left;
+	color: #000000;
+}
+
+
+.logo{
+width: 90px;
+margin-top: -7px;
+}
+
+a{
+	color: #fff;
+}
+
+li:hover, li:active, .nav>li>a:focus, .nav>li>a:hover {
+	background-color: #eeddb9;
+	color: #000;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	background-color: #eeddb9;
+	color: #000;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	background-color: #eeddb9;
+	color: #000;
+}
+
+.dropdown-menu>li>a, .dropdown-menu>li>a, .dropdown-menu{
+	background-color: #000;
+	color: #fff;
+}
+
+ul {
+	background-color: #000;
+}
+
+div.phone{
+	background-color: #eeddb9;
+	color: #000;
+	font-family: DecorCyrillic;
+	font-size: 14px;
+margin-top: 10px;
+width: 150px;
+height: 30px;
+text-align: center;
+padding-top: 5px;
+}
+li.no-color{
+	background-color: transparent;
+}
+span.icon-bar{
+	background-color: #fff;
+}
+
+div.main-menu{
+	height: 50px;
+}
