@@ -1,0 +1,14 @@
+$(function(){
+	$('#btn-1').click(function(){
+		$('#programm').slideDown();
+	});
+	$('#back-1').click(function(){
+		$('#programm').slideUp()
+	});
+	$('#btn-2').click(function(){
+		$('#raspisanie').slideDown();
+	});
+	$('#back-2').click(function(){
+		$('#raspisanie').slideUp()
+	});
+});

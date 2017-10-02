@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<title>ШБТ Андеор</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -10,9 +11,8 @@
 <body>
 
 <div class="container main-menu">
-
 <nav class="navbar">
-  <div class="container-fluid">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -22,7 +22,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-      	<img src="img/Logo.png" class="img-response logo">
+      	<img src="img/Logo.png" class="img-responsive logo">
       </a>
     </div>
 
@@ -51,9 +51,6 @@
 </nav>
 </div>
 
-
-
-
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -65,42 +62,401 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="img/banners/banner1.jpg" alt="..." width="2000" height="1200">
+      <img src="img/banners/banner1.jpg" class="img-responsive">
       <div class="carousel-caption">
-        ...
+        
+        <span class="banner-text-1"> Школа Бальных Танцев</span><br>
+        <span class="banner-text-2"> проводит обучение взрослых с нулевого уровня</span><br>
+      
+        <a href="https://goo.gl/forms/yQtk66UWfgC50wd03" target="_blank">
+          <button class="from-top-187">Записаться</button>
+        </a>
       </div>
     </div>
     <div class="item">
-      <img src="img/banners/banner2.jpg" alt="..." width="2000" height="1200">
+      <img src="img/banners/banner2.jpg" class="img-responsive">
       <div class="carousel-caption">
-        ...
+        
+        <span class="banner-text-1"> Школа Бальных танцев </span><br>
+        <span class="banner-text-2"> открыт набор в группу начинающих и в группу продолжающих </span><br>
+        <a href="https://goo.gl/forms/yQtk66UWfgC50wd03" target="_blank" class="from-top-50">
+          <button class="from-top-25">Записаться</button>
+        </a>
       </div>
     </div>
  	<!--your text can be here-->
   </div>
 
-  <!-- Controls 
+<!--Controls--> 
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>-->
   </a>
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>-->
+    <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>-->
+  </a>
 </div>
-	
-<div class="choreographer-block">
-  <div style="margin: 20px auto; width: 900px;">
-    <img src="img/robert.jpg" align="left" width="300" style="display: block; margin: 0 80px">
-    <div class="choreographer-description">
-      <p>Трапш Роберт Робертович</p> 
-      <p>Преподаватель баольных и классических танцев, балетмейстер, хореограф.
-      Основатель и руководитель Школы бальных танцев "Андеор".
-      Художественный руководиель ансанбля отечественных бальных танцев "Андеор".
-      Лауреат городских конкурсов по отечественным бальным танцам.
-      Занимается преподавательской деятельностью с 2009г.</p>
-      <div style="border: 2px solid #FFF; display: inline; padding: 4px;">ПРОГРАММА ОБУЧЕНИЯ</div>
+
+
+<div class="container from-top-50">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 text-right">
+          <img src="img/robert.png" class="img-responsive robert right-img" alt="Robert Trapsh">
+        </div>
+        <div class="col-md-6 col-sm-12 text-right paragraf">
+          <p class="button">Хореограф</p>
+          <p class="banner-text-1">Роберт Трапш</p>
+          <span class="under-text">Роберт</span>
+          <p>Трапш Роберт Робертович
+            Преподаватель спортивных и классических бальных танцев, балетмейтер, хореограф, основатель и руководитель Школы бальных танцев "Андеор", художественный руководитель ансамбля отечественных бальных танцев "Андеор", лауреат городских конкурсов по отечественным бальным танцам. Занимается преподавательской деятельностью с 2009 года.
+        </p>
+        <div class="row from-top-50 text-left">
+          <div class="col-md-6">
+            
+              <button id="btn-1">Программа обучения</button>
+             
+          </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container from-top-50" id="programm">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 text-center">
+      <p class="banner-text-1 text-center">Программа обучения</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-12">
+      <div class="row">
+      <p class="button">Отечественные бальные танцы</p>
+      </div>
+      <div class="row">
+        <ul class="programm">
+          <li>Большой фигурный вальс</li>
+          <li>Венгерский-бальный танец</li>
+          <li>Полонез-мазурка</li>
+          <li>Фигурный вальс</li>
+          <li>Русский бальный танец</li>
+          <li>Русский лирический танец</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="row">
+      <p class="button">Европейская программа</p>
+      </div>
+      <div class="row">
+        <ul class="programm">
+          <li>Венский вальс</li>
+          <li>Танго</li>
+          <li>Медленный вальс</li>
+          <li>Квикстеп</li>
+          <li>Медленнный фокстрот</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="row">
+      <p class="button">Латиноамериканская программа</p>
+      </div>
+      <div class="row">
+        <ul class="programm">
+          <li>Ча-ча-ча</li>
+          <li>Самба</li>
+          <li>Румба</li>
+          <li>Джайв</li>
+          <li>Пасадобль</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row from-top-50">
+    <div class="col-md-4 col-md-offset-4 col-sm-12">
+      <ul class="svernut-1">
+        <li id="back-1">Свернуть</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="carousel-example-generic2" class="carousel slide from-top-50" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+    <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/banners/shtiglitsa.jpg" alt="..." class="img-responsive">
+      <div class="carousel-caption">
+        <span class="banner-text-1"> Школа бальных танцев </span><br>
+        <span class="banner-text-2"> в Академии имени </span>
+        <span class="banner-text-4"> А. Л. Штиглица </span><br>
+        <span class="banner-text-1"> Соляной пер., 13</span><br>
+        <a href="https://goo.gl/forms/yQtk66UWfgC50wd03" target="_blank" class="">
+          <button class="from-top-25">Подробнее</button>
+        </a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/banners/gercena.png" alt="..." class="img-responsive">
+      <div class="carousel-caption">
+        <span class="banner-text-1"> Школа бальных танцев </span><br>
+        <span class="banner-text-2"> в университете имени </span>
+        <span class="banner-text-4"> А. И. Герцена</span><br>
+        <span class="banner-text-1"> наб. реки Мойки, д. 48  </span><br>
+        <a href="https://goo.gl/forms/yQtk66UWfgC50wd03" target="_blank" class="from-top-50">
+          <button class="from-top-25">Подробнее</button>
+        </a>
+      </div>
+    </div>
+  <!--your text can be here-->
+  </div>
+<!--Controls--> 
+  <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+    <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>-->
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+    <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>-->
+  </a>
+</div>
+
+<div class="social">
+  <a href="https://www.instagram.com/roberttrapsh/"><img src="img/instagram.png" class="img-responcive opacity"></a>
+  <a href="https://vk.com/socialballet"><img src="img/vk.png" class="img-responcive opacity" ></a>
+  <a href="#"><img src="img/youtube.png" class="img-responcive opacity"></a>
+</div>
+
+
+<div class="container-fluid from-top-50">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-1 col-sm-12 text-right">
+          <img src="img/banners/andeor.jpg" class="img-responsive" alt="andeor">
+
+        </div>
+        <div class="col-md-6 col-sm-12 text-right paragraf">
+          <p class="button">Ансамбль</p>
+          <p class="banner-text-1">Андеор</p>
+          <span class="under-text">Андеор</span>
+          <p>Ансамбль отечественных бальных танцев Андеор начал свою творческую деятельность в 2016г под руководством Трапша Роберта Робертовича. Коллектив принимает активное участие в культурной жизни Санкт-Петербурга и Ленинградкой Области: выступает на городских концертах и мероприятиях, творческих вечерах и фестивалях, проводят мастер-классы по ОБТ танцоры коллектива являются постоянными участниками городских балов, конкурсов по отечественным и спортивным бальным танцам.</p>
+
+
+         <!-- <p>Коллектив ансамбля "Андеор" - это студенты ВУЗов Санкт-Петербурга и молодые специалисты, когда-то они пришли, чтобы научиться танцевать и добились отличного результата, сегодня они - настоящий пример возрождения отечественного бального танцевального искусства в Санкт-Петербурге и всей России.</p>-->
+        
+        <div class="row from-top-50 text-left">
+          <div class="col-md-6">
+            <a href="https://vk.com/endehors" target="_blank" class="from-top-50">
+              <button>Подробнее</button>
+             </a>
+          </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="raspisanie from-top-50">
+  <div class="container middle">
+    <div class="row">
+      <div class="col-md-12 text-center inline">
+          <hr class="yellow inline">
+          <p class="yellow-text inline">Танцуй вместе с нами</p>
+          <hr class="yellow inline">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <span class="raspisanie-text">РАСПИСАНИЕ ЗАНЯТИЙ</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+          <button id="btn-2">Открыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container from-top-50" id="raspisanie">
+  <div class="row text-center">
+    <div class="col-md-3 col-md-offset-3">
+      <p class="button noleft">Школа бального танца Штиглица</p> 
+      <p class="noleft"> ул. Чайковского, 3</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <p class="button noleft">Школа бального танца Андеор</p> 
+      <p class="noleft"> Московский пр., 9</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <p class="button noleft">Школа бального танца Герцена</p> 
+      <p class="noleft"> Лиговский пр., 3</p>
+    </div>
+  </div>
+  <div class="row text-center from-top-50">
+    <div class="col-md-3">
+      <p class="button">
+        Вторник
+      </p>
+    </div>
+    <div class="col-md-3 border-2-3"> </div>
+    <div class="col-md-3 border-2-3"> </div>
+    <div class="col-md-3 text-center">
+      <p class="yellow-text noleft">18:00 - 20:00</p> 
+      <p class="noleft"> Новички</p>
+    </div>
+  </div>
+   <div class="row text-center">
+    <div class="col-md-3">
+      <p class="button">
+        Суббота
+      </p>
+    </div>
+    <div class="col-md-3 border-2-3"> </div>
+    <div class="col-md-3 border-2-3">
+      <p class="yellow-text noleft">19:00 - 21:00</p> 
+      <p class="noleft"> Продолжающие</p>
+    </div>
+    <div class="col-md-3 text-center">
+      <p class="yellow-text noleft">11:00 - 13:00</p> 
+      <p class="noleft"> Новички</p>
+    </div>
+  </div>
+   <div class="row text-center">
+    <div class="col-md-3">
+      <p class="button">
+        Воскресенье
+      </p>
+    </div>
+    <div class="col-md-3 border-2-3">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="yellow-text noleft">17:00 - 19:00</p> 
+          <p class="noleft"> Продолжающие</p>
+        </div>
+        <div class="col-md-6">
+          <p class="yellow-text noleft">19:00 - 21:00</p> 
+          <p class="noleft"> Новички</p>
+        </div>
+      </div>
+   </div>
+    <div class="col-md-3 border-2-3"> </div>
+    <div class="col-md-3 text-center">
+    </div>
+  </div>
+  <div class="row from-top-50">
+    <div class="col-md-4 col-md-offset-4 col-sm-12">
+      <ul class="svernut-1">
+        <li id="back-2">Свернуть</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid from-top-50">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-1 col-sm-12 text-right">
+          <img src="img/banners/fb.jpg" class="img-responsive" alt="feedback">
+        </div>
+        <div class="col-md-6 col-sm-12 text-right paragraf">
+
+        <div class="row">
+          <p class="button from-left-125">Отзывы</p>
+        </div>
+        <div class="row">
+            <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+              <!-- Indicators 
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+                <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>-->
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/Screenshot_2.png" alt="..." class="img-responsive">
+                  <div class="carousel-caption nomargin">
+                      <span class="under-text">Иван</span>
+                      <a href="#"><p class="banner-text-1">Иван</p></a>
+                      
+                      <p>Ансамбль отечественных бальных танцев Андеор начал свою творческую деятельность в 2016г под руководством Трапша Роберта Робертовича. Коллектив принимает активное участие в культурной жизни Санкт-Петербурга и Ленинградкой Области: выступает на городских концертах и мероприятиях, творческих вечерах и фестивалях, проводят мастер-классы по ОБТ танцоры коллектива являются постоянными участниками городских балов, конкурсов по отечественным и спортивным бальным танцам.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/Screenshot_2.png" alt="..." class="img-responsive">
+                  <div class="carousel-caption nomargin">
+                    <a href="#"><p class="banner-text-1">Иван</p></a>
+                      <span class="under-text">Иван</span>
+                      <p>Ансамбль отечественных бальных танцев Андеор начал свою творческую деятельность в 2016г под руководством Трапша Роберта Робертовича. Коллектив принимает активное участие в культурной жизни Санкт-Петербурга и Ленинградкой Области: выступает на городских концертах и мероприятиях, творческих вечерах и фестивалях, проводят мастер-классы по ОБТ танцоры коллектива являются постоянными участниками городских балов, конкурсов по отечественным и спортивным бальным танцам.</p>
+                  </div>
+                </div>
+              <!--your text can be here-->
+              </div>
+            <!--Controls--> 
+              <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+                <img src="img/sleder_left_arrow.png" class="arrow-in-slider">
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>-->
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+                <img src="img/slider_right_arrow.png" class="arrow-in-slider">
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>-->
+              </a>
+            </div>
+        </div>       
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-1 col-sm-12">
+        <div class="row">
+          <h4 class="footer">Контакты</h4>
+          <p class="contacts">Санкт-Петербург</p>
+          <p class="contacts">+7 (962) 728-09-21</p>
+        </div>
+        <div class="row">
+          <h4 class="footer">Соц. Сети</h4>
+          <a href="https://www.instagram.com/roberttrapsh/"><img src="img/instagram.png" class="img-responcive inline opacity"></a>
+          <a href="https://vk.com/socialballet"><img src="img/vk.png" class="img-responcive inline opacity" ></a>
+          <a href="#"><img src="img/youtube.png" class="img-responcive inline opacity"></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h4 class="footer">Обратная связь</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control" name="name" placeholder="Имя">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" name="phone" placeholder="Телефон">
+          </div>
+        </div>
+        <div class="row margin-top-15">
+          <div class="col-md-12">
+          <textarea class="form-control" rows="3" placeholder="Напишите ваш вопрос, отзыв или заявку на участие"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-9 col-md-3 text-right margin-top-15">
+            <button type="submit" class="btn btn-default inverse">Отправить</button>
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -109,5 +465,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
 </html>
