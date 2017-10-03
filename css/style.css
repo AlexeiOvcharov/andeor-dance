@@ -1,14 +1,5 @@
-
-/* Color palette */
-
-:root {
-    --wine-red: #810425;
-    --white: #dddddd;
-    --faded-red: #c83335;
-}
-
 body{
-    background-color: #000;
+    background-color: #111;
 }
 
 /* Text styles */
@@ -33,7 +24,7 @@ body{
 
 .under-text {
     font-family: DecorCyrillic;
-    font-size: 144.8px;
+    font-size: 144px;
     text-align: left;
     color: rgba(255, 255, 255, 0.3);
     position: absolute;
@@ -42,37 +33,64 @@ body{
 }
 
 .banner-text-1 {
-    font-family: DecorCyrillic;
-    font-size: 52.8px;
-    color: #ffffff;
-}
-
-.banner-text-3 {
-    font-family: DecorCyrillic;
-    font-size: 52.8px;
-    text-align: left;
-    color: #eeddb9;
+    font-family: Romul;
+    font-size: 25px;
+    color: #cccccc;
+    margin-left: -4px;
 }
 
 .banner-text-2 {
     font-family: Romul;
-    font-size: 35.2px;
+    font-size: 25px;
     text-align: left;
-    color: #ffffff;
+    color: #cccccc;
+    padding: 0px 0 25px 0;
 }
 
 .banner-text-4 {
     font-family: Romul;
-    font-size: 35.2px;
+    font-size: 35px;
+    text-align: left;
+    color: #cccccc;
+}
+
+.banner-gallery-text-1 {
+    font-family: Romul;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 0px 0 25px 0;
+    text-shadow: 1px 1px #666666;
+}
+
+.banner-gallery-text-2 {
+    font-family: Romul;
+    font-size: 25px;
+    text-align: left;
+    color: #ffffff;
+    padding: 0px 0 25px 0;
+    text-shadow: 1px 1px #666666;
+}
+
+.banner-gallery-text-3 {
+    font-family: DecorCyrillic;
+    font-size: 53px;
+    text-align: left;
+    color: #eeddb9;
+}
+
+.banner-gallery-text-4 {
+    font-family: Romul;
+    font-size: 35px;
     text-align: left;
     color: #eeddb9;
 }
 
 p.contacts {
-    font-family: DecorCyrillic;
-    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
     text-align: left;
-    color: #ffffff;
+    color: #cccccc;
+    margin: 0;
 }
 
 h4.footer {
@@ -80,6 +98,7 @@ h4.footer {
     font-size: 22px;
     text-align: left;
     color: #eeddb9;
+    margin-bottom: 15px;
 }
 
 .button-send {
@@ -90,20 +109,18 @@ h4.footer {
 }
 
 p {
-    font-family: GillSans;
-    font-size: 18px;
-    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
     text-align: left;
-    color: #ffffff;
+    color: #cccccc;
 }
 
 button {
     font-family: Romul;
-    font-size: 14.8px;
+    font-size: 16px;
     text-align: left;
     color: #ffffff;
-    padding: 0 6px;
-    padding-top: 3px;
+    padding: 8px 10px;
 }
 
 button.center{
@@ -111,10 +128,10 @@ button.center{
 }
 
 p.button {
-    font-family: Romul;
-    font-size: 14.8px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
     text-align: left;
-    color: #ffffff;
+    color: #cccccc;
 }
 
 .noleft{
@@ -122,8 +139,8 @@ p.button {
 }
 
 .yellow-text {
-    font-family: GillSans;
-    font-size: 14.1px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
     font-weight: 600;
     text-align: left;
     color: #d8c18f;
@@ -184,24 +201,22 @@ li:hover, li:active, .nav>li>a:focus, .nav>li>a:hover {
 }
 
 .dropdown-menu>li>a, .dropdown-menu>li>a, .dropdown-menu{
-    background-color: #000;
+    background-color: #111;
     color: #fff;
 }
 
 ul {
-    background-color: #000;
+    background-color: #111;
 }
 
 div.phone{
     background-color: #eeddb9;
     color: #000;
-    font-family: DecorCyrillic;
-    font-size: 14px;
+    font-family: Romul;
+    font-size: 16px;
     margin-top: 10px;
-    width: 150px;
-    height: 30px;
-    text-align: center;
-    padding-top: 5px;
+    line-height: 30px;
+    padding: 0 10px;
 }
 
 li.no-color{
@@ -220,7 +235,9 @@ div.main-menu{
 .carousel-caption{
     text-align: left;
     bottom: 35%;
-    
+    padding-bottom: 25px;
+    right: 15%;
+    left: 15%;
 }
 
 .form-top-25{
@@ -264,7 +281,7 @@ button:hover, button.invers{
 
 ul.programm>li{
     list-style-image: url(../img/arrow_bullit.png);
-    font-family: GillSans;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #fff;
 }
@@ -276,7 +293,7 @@ ul.programm>li:hover{
 
 .robert{
     max-width: none;
-    height: 420px;
+    height: 405px;
 }
 .right-img{
     float: right;
@@ -331,26 +348,28 @@ th{
     display: none;
 }
 div.footer{
-    /*border-top: 1px solid #eeddb9;*/
+    /* border-top: 1px solid #eeddb9; */
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 hr.footer-separator {
     margin: 0;
     margin-top: 50px;
     border-top: 1px solid #eeddb9;
+    opacity: 0.5;
 }
 
 input, textarea{
     background-color: transparent !important;
     border: 1px solid #eeddb9 !important;
-    font-family: GillSans;
-    color: #fff;
-    font-size: 14px;
-    resize: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #cccccc !important;
+    font-size: 16px !important;
+    line-height: 30px !important;
 }
 
-.margin-top-15{
-    margin-top: 15px;
+.margin-top-5{
+    margin-top: 5px;
 }
 
 .opacity:hover{
@@ -388,7 +407,6 @@ li.no-color{
 }
 
 .description-container {
-    max-width: 800px;
     margin: 0 auto;
 }
 
