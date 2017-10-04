@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     {% endblock %}
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ asset('favicon.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('img/favicon.ico') }}">
 </head>
 
 <body>
@@ -44,17 +44,17 @@
                         <a href="#" class="dropdown-toggle menu" data-toggle="dropdown" role="button"
                            aria-haspopup="true" aria-expanded="false"> О НАС </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="menu">ПРОГРАММА</a></li>
-                            <li><a href="#" class="menu">ПРОЕКТЫ</a></li>
-                            <li><a href="#" class="menu">ПРЕПОДАВАТЕЛЬ</a></li>
-                            <li><a href="#" class="menu">АНДЕОР</a></li>
-                            <li><a href="#" class="menu">ОТЗЫВЫ</a></li>
+                            <li><a href="#" class="menu" data-target=".link-program">ПРОГРАММА</a></li>
+                            <li><a href="#" class="menu" data-target=".link-projects">ПРОЕКТЫ</a></li>
+                            <li><a href="#" class="menu" data-target=".link-robert">ПРЕПОДАВАТЕЛЬ</a></li>
+                            <li><a href="#" class="menu" data-target=".link-andeor">АНДЕОР</a></li>
+                            <li><a href="#" class="menu" data-target=".link-reviews">ОТЗЫВЫ</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="menu">РАСПИСАНИЕ</a></li>
+                    <li><a href="#" class="menu" data-target=".link-schedule">РАСПИСАНИЕ</a></li>
                     <li><a href="#" class="menu">МАТЕРИАЛЫ</a></li>
-                    <li><a href="#" class="menu">НОВОСТИ</a></li>
-                    <li><a href="#" class="menu">КОНТАКТЫ</a></li>
+                    <li><a href="#" class="menu" data-target=".link-news">НОВОСТИ</a></li>
+                    <li><a href="#" class="menu" data-target=".link-contacts">КОНТАКТЫ</a></li>
                     <li class="no-color">
                         <div class="phone">+ 7 (962) 728-09-21</div>
                     </li>
@@ -70,7 +70,7 @@
 
 <hr class="footer-separator">
 
-<div class="footer">
+<div class="footer link-contacts">
     <div class="container" style="position: relative; left: 15px">
         <div class="row">
             <div class="col-md-6 col-sm-12">
@@ -151,6 +151,26 @@
                     $item.slideUp();
                 } else {
                     $item.slideDown();
+                }
+            });
+
+            $('ul.nav li').click(function() {
+                var target = $(this).find('a.menu').data('target');
+                if (target) {
+                    if (target == '.link-program') {
+                        var $item = $('#programm');
+                        if (!$item.is(':visible')) {
+                            $item.slideDown();
+                        }
+                    } else if (target == '.link-schedule') {
+                        var $item = $('#raspisanie');
+                        if (!$item.is(':visible')) {
+                            $item.slideDown();
+                        }
+                    }
+                    $(window).scrollTo(target, 300);
+
+                    return false;
                 }
             });
         });
