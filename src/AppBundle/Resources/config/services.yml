@@ -1,0 +1,8 @@
+services:
+    flash_bag:
+        class: AppBundle\Service\FlashBag
+        arguments: ["@session"]
+    mail:
+        class: AppBundle\Service\Mail
+        calls:
+            - [setContainer, [ "@service_container" ]]

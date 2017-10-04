@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Андеор</title>
+    <meta name="keywords" content="Андеор">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block stylesheets %}
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('favicon.png') }}">
+</head>
+
+<body>
+<div class="container main-menu">
+    <nav class="navbar">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/Logo.png" class="img-responsive logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle menu" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false"> О НАС </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="menu">ПРОГРАММА</a></li>
+                            <li><a href="#" class="menu">ПРОЕКТЫ</a></li>
+                            <li><a href="#" class="menu">ПРЕПОДАВАТЕЛЬ</a></li>
+                            <li><a href="#" class="menu">АНДЕОР</a></li>
+                            <li><a href="#" class="menu">ОТЗЫВЫ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu">РАСПИСАНИЕ</a></li>
+                    <li><a href="#" class="menu">МАТЕРИАЛЫ</a></li>
+                    <li><a href="#" class="menu">НОВОСТИ</a></li>
+                    <li><a href="#" class="menu">КОНТАКТЫ</a></li>
+                    <li class="no-color">
+                        <div class="phone">+ 7 (962) 728-09-21</div>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+
+{% block body %}
+
+{% endblock %}
+
+<hr class="footer-separator">
+
+<div class="footer">
+    <div class="container" style="position: relative; left: 15px">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="row">
+                    <h4 class="footer">Контакты</h4>
+                    <p class="contacts">Санкт-Петербург</p>
+                    <p class="contacts">+7 (962) 728-09-21</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h4 class="footer">Обратная связь</h4>
+                <div class="row">
+                    <div class="col-md-6" style="padding-right: 2px">
+                        <input type="text" class="form-control" name="name" placeholder="Имя">
+                    </div>
+                    <div class="col-md-6" style="padding-left: 2px">
+                        <input type="text" class="form-control" name="phone" placeholder="Телефон">
+                    </div>
+                </div>
+                <div class="row margin-top-5">
+                    <div class="col-md-12">
+                        <textarea class="form-control" rows="3"
+                                  placeholder="Напишите ваш вопрос, отзыв или заявку на участие"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-9 col-md-3 text-right margin-top-5">
+                        <button style="right: 18px;position: relative;">Отправить</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row" style="position: absolute; bottom: 0">
+            <a href="https://www.instagram.com/roberttrapsh/"><img src="{{ asset('img/instagram.png') }}"
+                                                                   class="img-responcive inline opacity"></a>
+            <a href="https://vk.com/socialballet"><img src="{{ asset('img/vk.png') }}" class="img-responcive inline opacity"></a>
+            <a href="#"><img src="{{ asset('img/youtube.png') }}" class="img-responcive inline opacity"></a>
+        </div>
+    </div>
+</div>
+
+{% block js %}
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.scrollTo.min.js') }}"></script>
+
+    <script>
+        $(document).ready(function () {
+            {% set bagKeys = [
+            constant('AppBundle\\Service\\FlashBag::INLINE_ERROR'),
+            constant('AppBundle\\Service\\FlashBag::INLINE_WARNING'),
+            constant('AppBundle\\Service\\FlashBag::INLINE_INFO'),
+            constant('AppBundle\\Service\\FlashBag::INLINE_SUCCESS')
+            ] %}
+            {% set bagClasses  = ['danger', 'warning', 'info', 'success'] %}
+            {% for key, bagKey in bagKeys %}
+            {% for message in app.session.flashBag.get(bagKey) %}
+            $.notify({
+                message: "{{ message | raw }}"
+            }, {
+                type: "{{ bagClasses[key] }}"
+            });
+            {% endfor %}
+            {% endfor %}
+
+            $('#btn-1').click(function () {
+                var $item = $('#programm');
+                if ($item.is(':visible')) {
+                    $item.slideUp();
+                } else {
+                    $item.slideDown();
+                }
+            });
+            $('#btn-2').click(function () {
+                var $item = $('#raspisanie');
+                if ($item.is(':visible')) {
+                    $item.slideUp();
+                } else {
+                    $item.slideDown();
+                }
+            });
+        });
+    </script>
+{% endblock %}
+
+</body>
+</html>

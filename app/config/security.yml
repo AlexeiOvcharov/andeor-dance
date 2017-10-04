@@ -1,0 +1,27 @@
+security:
+    encoders:
+        AppBundle\Entity\Users: bcrypt
+
+    providers:
+        database_users:
+            entity: { class: AppBundle:Users, property: email }
+
+    firewalls:
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        secured_area:
+            pattern: ^/
+            anonymous: true
+            form_login:
+                check_path: security_login
+                login_path: security_login
+                username_parameter: login[username]
+                password_parameter: login[password]
+            logout:
+                path: security_logout
+                target: homepage
+            provider: database_users
+
+    access_control:
+        - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
