@@ -472,5 +472,47 @@ p.review::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5);
 }
-​
+
+.carousel-inner-multiple .item.left.active {
+    transform: translateX(-33%);
+}
+.carousel-inner-multiple .item.right.active {
+    transform: translateX(33%);
+}
+.carousel-inner-multiple .item.next {
+    transform: translateX(33%)
+}
+.carousel-inner-multiple .item.prev {
+    transform: translateX(-33%)
+}
+.carousel-inner-multiple .item.right,
+.carousel-inner-multiple .item.left {
+    transform: translateX(0);
+}
+.carousel-inner-multiple .carousel-control.left,.carousel-inner-multiple .carousel-control.right {background-image:none;}
+
+.news-description {
+    position: absolute;
+    bottom: 0;
+    padding: 0 15px 15px 15px;
+}
+.news-description .part1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    color: #eeddb9;
+    text-align: left;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px #666666;
+}
+.news-description .part2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    text-align: left;
+    padding-bottom: 15px;
+    text-shadow: 1px 1px #666666;
+}
+.news-description .part3 {
+    text-align: left;
+}
 /* END */
