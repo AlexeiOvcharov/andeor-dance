@@ -120,10 +120,11 @@ button.center {
 }
 
 p.button {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
+    font-family: Romul;
+    font-size: 22px;
     text-align: left;
     color: #cccccc;
+    margin-bottom: 0px;
 }
 
 .noleft {
@@ -310,6 +311,9 @@ ul.svernut-1 > li:hover {
 .carousel-indicators {
     text-align: left;
     bottom: 30%;
+    position: absolute;
+    left: 15%;
+    margin-left: 0;
 }
 
 .border-2-3 {
@@ -451,4 +455,22 @@ li.no-color {
     border-bottom: none;
 }
 
+p.review {
+    overflow-y: auto;
+    height: 300px;
+}
+p.review::-webkit-scrollbar {
+    width: 6px;
+}
+
+p.review::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+
+p.review::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5);
+}
+​
 /* END */
