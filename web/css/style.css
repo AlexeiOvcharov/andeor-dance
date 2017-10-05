@@ -416,47 +416,6 @@ li.no-color {
     margin: 0 auto;
 }
 
-/* Schedule */
-
-.schedule {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.schedule-row {
-    display: table;
-    width: 100%;
-}
-
-.schedule-column {
-    height: 100%;
-    display: table-cell;
-    text-align: center;
-    padding-top: 10px;
-    border-right: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-}
-
-.column-width {
-    width: 20%;
-}
-
-.schedule > div > div:first-child {
-    border: none;
-}
-
-.schedule > div:first-child > div {
-    border: none;
-}
-
-.schedule > div > div:last-child {
-    border-right: none;
-}
-
-.schedule > div:last-child > div {
-    border-bottom: none;
-}
-
 p.review {
     overflow-y: auto;
     height: 300px;
