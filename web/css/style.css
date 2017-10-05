@@ -178,7 +178,7 @@ a {
     color: #fff;
 }
 
-li:hover, li:active, .nav > li > a:focus, .nav > li > a:hover {
+.nav li:hover, li:active, .nav > li > a:focus, .nav > li > a:hover {
     background-color: #eeddb9;
     color: #000;
 }
@@ -198,7 +198,7 @@ li:hover, li:active, .nav > li > a:focus, .nav > li > a:hover {
     color: #cccccc;
 }
 
-ul {
+.nav ul {
     background-color: #000;
 }
 
@@ -271,9 +271,11 @@ button:hover, button.invers {
 }
 
 /*список*/
-
+ul.programm {
+    padding-left: 16px;
+}
 ul.programm > li {
-    list-style-image: url(../img/arrow_bullit.png);
+    list-style-type: disc;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #ccc;
@@ -514,5 +516,26 @@ p.review::-webkit-scrollbar-thumb {
 }
 .news-description .part3 {
     text-align: left;
+}
+
+.program-header {
+    font-size: 52px;
+    line-height: 40px;
+    padding-bottom: 10px;
+}
+.notify-alert {
+    display: inline-block;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    z-index: 1031;
+    top: 10px !important;
+    right: 0 !important;
+    width: 15% !important;
+    margin-right: 5px !important;
+    animation-iteration-count: 1;
+    font-size: 15px;
+}
+.notify-alert button:hover {
+    border: 0;
 }
 /* END */
