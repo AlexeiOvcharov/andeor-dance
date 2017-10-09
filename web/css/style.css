@@ -416,6 +416,15 @@ li.no-color {
     margin: 0 auto;
 }
 
+a.review-link {
+    color: #ccc;
+}
+a.review-link:hover, a.review-link:focus {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px #fff solid;
+}
+
 p.review {
     overflow-y: auto;
     height: 300px;
@@ -497,4 +506,3 @@ p.review::-webkit-scrollbar-thumb {
 .notify-alert button:hover {
     border: 0;
 }
-/* END */
