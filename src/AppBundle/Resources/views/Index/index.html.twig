@@ -120,30 +120,24 @@
         </div>
     </div>
 
-    <div id="carousel-example-generic2" class="carousel slide from-top-50 link-projects" data-ride="carousel">
-        <ol class="carousel-indicators">
+    <div id="carousel-example-generic2" class="container carousel slide from-top-50 link-projects">
+        {#<ol class="carousel-indicators">
             <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
-        </ol>
+            <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+        </ol>#}
 
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="{{ asset('img/banners/shtiglitsa.jpg') }}" alt="..." class="img-responsive">
-                <div class="carousel-caption">
-                    <div class="banner-gallery-text-1" style="padding-bottom: 10px"> Школа бальных танцев</div>
-                    <div style="padding-bottom: 5px; line-height: 30px">
-                        <span class="banner-gallery-text-2"> в </span>
-                        <span class="banner-gallery-text-4"> СПГХПА им. А.Л. Штиглица </span>
-                    </div>
-                    <div class="banner-gallery-text-1" style="padding-bottom: 10px"> Соляной пер., 13</div>
-                    <div>
-                        <a href="https://vk.com/ghpadance" target="_blank" class="">
-                            <button class="from-top-25">Подробнее</button>
-                        </a>
-                    </div>
-                </div>
+                <img src="{{ asset('img/banners/programs/year_1.jpg') }}" alt="..." style="padding-right: 300px" class="img-responsive">
             </div>
             <div class="item">
+                <img src="{{ asset('img/banners/programs/year_2.jpg') }}" alt="..." style="padding-right: 300px" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="{{ asset('img/banners/programs/year_3.jpg') }}" alt="..." style="padding-right: 300px" class="img-responsive">
+            </div>
+            {#<div class="item">
                 <img src="{{ asset('img/banners/gercena.jpg') }}" alt="..." class="img-responsive">
                 <div class="carousel-caption">
                     <div class="banner-gallery-text-1" style="padding-bottom: 10px"> Школа бальных танцев</div>
@@ -158,6 +152,25 @@
                         </a>
                     </div>
                 </div>
+            </div>#}
+        </div>
+    </div>
+    <div class="container from-top-50" style="padding-right: 220px">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" data-target="#carousel-example-generic2" data-slide-to="0" class="from-top-50">
+                    <button>Начинающие</button>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" data-target="#carousel-example-generic2" data-slide-to="1" class="from-top-50">
+                    <button>Опытные</button>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" data-target="#carousel-example-generic2" data-slide-to="2" class="from-top-50">
+                    <button>Продолжающие</button>
+                </a>
             </div>
         </div>
     </div>
@@ -168,7 +181,6 @@
         <a href="https://vk.com/socialballet" target="_blank"><img src="{{ asset('img/vk.png') }}" class="img-responcive opacity"></a>
         <a href="https://www.youtube.com/channel/UCDxyrnl4E1CYcAFzk3nCr2Q" target="_blank"><img src="{{ asset('img/youtube.png') }}" class="img-responcive opacity"></a>
     </div>
-
 
     <div class="container from-top-50 link-andeor">
         <div class="row">
@@ -226,59 +238,53 @@
     <div class="container from-top-50" id="raspisanie">
         <table style="width: 100%">
             <tr>
-                <td width="10%"></td>
-                <td width="30%"><p class="button noleft">Школа<br>бального танца<br>Штиглица</p></td>
-                <td width="30%"><p class="button noleft">Школа<br>бального танца<br>Андеор</p></td>
-                <td width="30%"><p class="button noleft">Школа<br>бального танца<br>Герцена</p></td>
+                <td width="25%"></td>
+                <td width="25%"><p class="button noleft">Вторник</p></td>
+                <td width="25%"><p class="button noleft">Суббота</p></td>
+                <td width="25%"><p class="button noleft">Воскресенье</p></td>
             </tr>
-            <tr>
+            {#<tr>
                 <td></td>
                 <td><p class="noleft"> ул. Чайковского, 3</p></td>
                 <td><p class="noleft"> Московский пр., 9</p></td>
                 <td><p class="noleft"> Лиговский пр., 3</p></td>
-            </tr>
+            </tr>#}
             <tr>
                 <td>
-                    <p class="button noleft">
-                        Вт
+                    <p class="button">
+                        Начинающие
                     </p>
                 </td>
                 <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;"><p class="noleft"></td>
                 <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;"></td>
                 <td style="border-bottom: 1px #cccccc solid; padding: 10px">
-                    <p class="yellow-text noleft">18:00 - 20:00</p>
-                    <p class="noleft"> Группа начинающих</p>
+                    <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">12:00 - 14:00</p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <p class="button noleft">
-                        Сб
+                    <p class="button">
+                        Продолжающие
                     </p>
                 </td>
                 <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid; padding: 10px">
-                    <p class="yellow-text noleft">19:00 - 21:00</p>
-                    <p class="noleft"> Группа продолжающих</p>
+                    <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">19:00 - 21:00</p>
                 </td>
                 <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;"></td>
                 <td style="border-bottom: 1px #cccccc solid; padding: 10px">
-                    <p class="yellow-text noleft">11:00 - 13:00</p>
-                    <p class="noleft"> Группа начинающих</p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <p class="button noleft">
-                        Вс
+                    <p class="button">
+                        Опытные
                     </p>
                 </td>
                 <td style="border-right: 1px #cccccc solid; padding: 10px">
-                    <p class="yellow-text noleft">17:00 - 19:00</p>
-                    <p class="noleft"> Группа продолжающих</p>
+
                 </td>
                 <td style="border-right: 1px #cccccc solid;">
-                    <p class="yellow-text noleft">19:00 - 21:00</p>
-                    <p class="noleft"> Группа начинающих</p>
+                    <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">19:00 - 21:00</p>
                 </td>
                 <td style="padding: 10px"></td>
             </tr>
