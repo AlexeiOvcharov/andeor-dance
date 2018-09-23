@@ -464,7 +464,7 @@ p.review::-webkit-scrollbar-thumb {
 .news-description {
     position: absolute;
     bottom: 0;
-    padding: 0 15px 15px 15px;
+    padding: 0 15px 0 15px;
 }
 .news-description .part1 {
     font-family: 'Ubuntu', sans-serif;
@@ -505,4 +505,9 @@ p.review::-webkit-scrollbar-thumb {
 }
 .notify-alert button:hover {
     border: 0;
+}
+.carousel-button.selected {
+    background-color: #eeddb9;
+    color: #000;
+    border: 2px solid #eeddb9;
 }
