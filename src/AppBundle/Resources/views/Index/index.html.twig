@@ -129,13 +129,16 @@
 
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="{{ asset('img/banners/programs/year_1.jpg') }}" alt="..." style="padding-right: 300px" class="img-responsive">
+                <img src="{{ asset('img/banners/programs/program1.jpg') }}" alt="..." style="padding-right: 300px" class="img-responsive">
             </div>
             <div class="item">
-                <img src="{{ asset('img/banners/programs/year_2.jpg') }}" alt="..." style="padding-right: 300px" class="img-responsive">
+                <img src="{{ asset('img/banners/programs/program2.jpg') }}" alt="..." style="padding-right: 300px" class="img-responsive">
             </div>
             <div class="item">
-                <img src="{{ asset('img/banners/programs/year_3.jpg') }}" alt="..." style="padding-right: 300px" class="img-responsive">
+                <img src="{{ asset('img/banners/programs/program3.jpg') }}" alt="..." style="padding-right: 300px" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="{{ asset('img/banners/programs/program4.jpg') }}" alt="..." style="padding-right: 300px" class="img-responsive">
             </div>
             {#<div class="item">
                 <img src="{{ asset('img/banners/gercena.jpg') }}" alt="..." class="img-responsive">
@@ -157,19 +160,24 @@
     </div>
     <div class="container from-top-50" style="padding-right: 220px">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <a href="#" data-target="#carousel-example-generic2" data-slide-to="0" class="from-top-50">
-                    <button class="carousel-button selected">Начинающие</button>
+                    <button class="carousel-button selected">1 год</button>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <a href="#" data-target="#carousel-example-generic2" data-slide-to="1" class="from-top-50">
-                    <button class="carousel-button">Опытные</button>
+                    <button class="carousel-button">2 год</button>
                 </a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <a href="#" data-target="#carousel-example-generic2" data-slide-to="2" class="from-top-50">
-                    <button class="carousel-button">Продолжающие</button>
+                    <button class="carousel-button">3 год</button>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" data-target="#carousel-example-generic2" data-slide-to="3" class="from-top-50">
+                    <button class="carousel-button">4 год</button>
                 </a>
             </div>
         </div>
@@ -178,10 +186,11 @@
     <div class="social">
         <a href="https://www.instagram.com/roberttrapsh/" target="_blank"><img src="{{ asset('img/instagram.png') }}"
                                                                class="img-responcive opacity"></a>
-        <a href="https://vk.com/socialballet" target="_blank"><img src="{{ asset('img/vk.png') }}" class="img-responcive opacity"></a>
+        <a href="https://vk.com/andeordance" target="_blank"><img src="{{ asset('img/vk.png') }}" class="img-responcive opacity"></a>
         <a href="https://www.youtube.com/channel/UCDxyrnl4E1CYcAFzk3nCr2Q" target="_blank"><img src="{{ asset('img/youtube.png') }}" class="img-responcive opacity"></a>
     </div>
 
+    <!--
     <div class="container from-top-50 link-andeor">
         <div class="row">
             <div class="col-md-6 col-sm-12 text-right">
@@ -197,10 +206,6 @@
                     фестивалях, концертах, танцевальных вечерах, проводят мастер-классы по отечественным бальным
                     танцам, танцоры коллектива являются постоянными участниками городских балов, конкурсов по
                     отечественным и спортивным бальным танцам.</p>
-
-
-                <!-- <p>Коллектив ансамбля "Андеор" - это студенты ВУЗов Санкт-Петербурга и молодые специалисты, когда-то они пришли, чтобы научиться танцевать и добились отличного результата, сегодня они - настоящий пример возрождения отечественного бального танцевального искусства в Санкт-Петербурге и всей России.</p>-->
-
                 <div class="row from-top-50 text-left">
                     <div class="col-md-6">
                         <a href="https://vk.com/endehors" target="_blank" class="from-top-50">
@@ -211,7 +216,7 @@
             </div>
         </div>
     </div>
-
+    -->
 
     <div class="raspisanie from-top-50 link-schedule">
         <div class="container middle">
@@ -238,55 +243,74 @@
     <div class="container from-top-50" id="raspisanie">
         <table style="width: 100%">
             <tr>
-                <td width="25%"></td>
-                <td width="25%"><p class="button noleft">Вторник</p></td>
-                <td width="25%"><p class="button noleft">Суббота</p></td>
-                <td width="25%"><p class="button noleft">Воскресенье</p></td>
+                <td width="20%"></td>
+                <td width="20%"><p class="button noleft">Вторник</p></td>
+                <td width="20%"><p class="button noleft">Суббота</p></td>
+                <td width="20%"><p class="button noleft">Суббота</p></td>
+                <td width="20%"><p class="button noleft">Воскресенье</p></td>
             </tr>
             <tr>
                 <td></td>
-                <td><p class="noleft"> Чапаева 17</p></td>
+                <td><p class="noleft"> Гостиный Двор</p></td>
+                <td><p class="noleft"> Гостиный Двор</p></td>
                 <td><p class="noleft"> Московский 13</p></td>
                 <td><p class="noleft"> Московский 13</p></td>
             </tr>
             <tr>
                 <td>
                     <p class="button">
-                        Начинающие
-                    </p>
-                </td>
-                <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;"><p class="noleft"></td>
-                <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;"></td>
-                <td style="border-bottom: 1px #cccccc solid; padding: 10px">
-                    <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">12:00 - 14:00</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p class="button">
-                        Продолжающие
+                        1 год
                     </p>
                 </td>
                 <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid; padding: 10px">
                     <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">19:00 - 21:00</p>
                 </td>
                 <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;"></td>
+                <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;">
+                    <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">20:00 - 21:30</p>
+                </td>
+                <td style="border-bottom: 1px #cccccc solid;"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="button">
+                        2 год
+                    </p>
+                </td>
+                <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;"></td>
+                <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;"></td>
+                <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid; padding: 10px">
+                    <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">18:30 - 20:00</p>
+                </td>
+                <td style="border-bottom: 1px #cccccc solid;"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="button">
+                        3 год
+                    </p>
+                </td>
+                <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;"></td>
+                <td style="border-right: 1px #cccccc solid; border-right: 1px #cccccc solid; padding: 10px">
+                    <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">19:00 - 21:00</p>
+                </td>
+                <td style="border-bottom: 1px #cccccc solid; border-right: 1px #cccccc solid;"></td>
                 <td style="border-bottom: 1px #cccccc solid; padding: 10px">
+                    <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">17:00 - 19:00</p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p class="button">
-                        Опытные
+                        4 год
                     </p>
                 </td>
-                <td style="border-right: 1px #cccccc solid; padding: 10px">
-
+                <td style="border-right: 1px #cccccc solid;"></td>
+                <td style="border-right: 1px #cccccc solid;"></td>
+                <td style="border-right: 1px #cccccc solid;"></td>
+                <td style="padding: 10px">
+                    <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">14:00 - 16:00</p>
                 </td>
-                <td style="border-right: 1px #cccccc solid;">
-                    <p class="yellow-text noleft" style="font-size: 20px; padding: 10px 0 10px 0">19:00 - 21:00</p>
-                </td>
-                <td style="padding: 10px"></td>
             </tr>
         </table>
     </div>
@@ -302,7 +326,7 @@
                         <div class="carousel-inner carousel-inner-multiple" role="listbox">
                             <div class="item active">
                                 <div class="col-sm-4" style="position: relative">
-                                    <img src="{{ asset('img/news/new_news1.jpg') }}" class="img-responsive">
+                                    <img src="{{ asset('img/news/news1.jpg') }}" class="img-responsive">
                                     <div class="news-description">
                                         {#<div class="part1">30.09 в 19.00</div>
                                         <div class="part2">
@@ -320,7 +344,7 @@
                             </div>
                             <div class="item">
                                 <div class="col-sm-4" style="position: relative">
-                                    <img src="{{ asset('img/news/new_news2.jpg') }}" class="img-responsive">
+                                    <img src="{{ asset('img/news/news2.jpg') }}" class="img-responsive">
                                     <div class="news-description">
                                         {#<div class="part1">14.06 в 19.00</div>
                                         <div class="part2">
@@ -338,7 +362,7 @@
                             </div>
                             <div class="item">
                                 <div class="col-sm-4" style="position: relative">
-                                    <img src="{{ asset('img/news/new_news3.jpg') }}" class="img-responsive">
+                                    <img src="{{ asset('img/news/news3.jpg') }}" class="img-responsive">
                                     <div class="news-description">
                                         {#<div class="part1">03.06 в 17.00</div>
                                         <div class="part2">
