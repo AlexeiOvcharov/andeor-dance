@@ -463,8 +463,9 @@ p.review::-webkit-scrollbar-thumb {
 
 .news-description {
     position: absolute;
-    bottom: 0;
-    padding: 0 15px 0 15px;
+    bottom: 200px;
+    left: 30%;
+    padding: 0 15px 15px 0px;
 }
 .news-description .part1 {
     font-family: 'Ubuntu', sans-serif;
